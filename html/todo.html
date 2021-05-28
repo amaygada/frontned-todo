@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Todo</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="./../css/mdb.min.css" />
+    <link rel="stylesheet" href="./../css/todo.css">
+  </head>
+  <body>
+
+    <div class="bg-image outer-container" id="outer_container">
+    
+      <div class="navbar">
+        <div class="logo-container">
+          <span class="logo-text">Todo</span>
+        </div>
+        <div class="logout-btn-container" id="logout_btn">
+            <i class="fas fa-power-off logout-icon"></i>
+            <span class="logout-btn">Logout</span>
+        </div>
+      </div>  
+
+      <div class="main-app-container" id="main_app_container">
+
+        <div class="add-container">
+          <i class="fas fa-plus plus-logo" id="add_group_btn"></i>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="group-modal" id="group_modal">
+      <div class="group-modal-content">
+        <i class="far fa-window-close group-modal-close" id="group_modal_close"></i>
+        <span class="group-modal-enter-text">Enter collection name</span>
+        <form action="" class="group-modal-form" id="group_modal_form">
+          <input class="group-modal-input" type="text" placeholder="collection_name" id="group_modal_collection_text">
+          <input type="submit" value="CREATE" class="btn group-modal-submit-btn">
+        </form>
+        <div class="group-modal-error-container">
+          <span class="group-modal-error" id="group_modal_error">collection exists</span>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="todo-modal" id="todo_modal">
+      <div class="todo-modal-content">
+        <i class="far fa-window-close todo-modal-close" id="todo_modal_close"></i>
+          <span class="todo-modal-enter-text" id="todo_modal_enter_text">Group Name</span>
+      
+            <div class="todo-modal-form" id="todo_modal_form">
+              <input class="todo-modal-input" type="text" placeholder="item" id="todo_modal_item_text">
+              <i class="fas fa-plus add-item-btn" id="add_item_btn"></i>
+            </div>
+
+        <div class="todo-list-container">
+          <ul class="list-group" id="list_group" style="display: flex;">
+             
+            <!-- <li class="list-group-item todo-item">
+              <div class="list-item-container">
+                <span>Hello</span>
+                <i class="fas fa-times remove-item"></i>
+              </div>
+            </li> -->
+            
+          </ul>
+        </div>
+
+        <div class="delete-container">
+          <span class="delete-btn" id="delete_group">delete</span>
+        </div>
+
+        </div>
+      </div>
+
+    <script type="module" src="./../js/todo.js"></script>
+  </body>
+</html>

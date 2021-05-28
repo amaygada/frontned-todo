@@ -1,0 +1,81 @@
+.outer-container {
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.logo-container {
+    margin-left: 3%;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    flex-direction: row;
+    background-color: #212020;
+}
+
+.logo {
+    color: beige;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.logo-text {
+    color: beige;
+    font-size: 0.9rem;
+}
+
+.signup-btn-container {
+    margin-right: 4%;
+}
+
+.signup-btn {
+    color: beige;
+    font-size: 0.9rem;
+    transition: ease .5s;
+}
+
+.signup-btn:hover {
+    font-size: 1rem;
+}
+
+.content {
+    height: 80vh;
+    display:flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+
+.welcome {
+    justify-content: center;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 2%;
+}
+
+.welcome-text {
+    color: #212020;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.random {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 30px;
+}
+
+.random-text {
+    color: #4ca1a3;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 821px) {
+    
+}

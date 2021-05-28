@@ -1,0 +1,502 @@
+.outer-container {
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+    transition: ease 0.5s;
+    filter: blur(0px); /*10px*/
+}
+
+.logo-container {
+    margin-left: 3%;
+    align-self: center;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: sticky;
+    width: 100%;
+    height: 45px;
+    flex-direction: row;
+    background-color: #212020;
+    align-items: center;
+    align-self: center;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+.logo {
+    color: beige;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.logo-text {
+    color: beige;
+    font-size: 0.9rem;
+}
+
+.logout-btn-container {
+    margin-right: 4%;
+    cursor: pointer;
+}
+
+.logout-icon {
+    color: #ff0000;
+    font-size: 0.8rem;
+    justify-content: center;
+    align-self: center;
+    margin-right: 0.1rem;
+}
+
+.logout-btn {
+    color: beige;
+    font-size: 0.9rem;
+    transition: ease .5s;
+}
+
+.logout-btn:hover {
+    font-size: 1rem;
+}
+
+.main-app-container {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+}
+
+.plus-logo {
+    color: beige;
+    font-size: 2rem;
+    transition: ease 0.5s;
+}
+
+.plus-logo:hover {
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.group-modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    transition: ease 0.5s;
+    display: none;
+}
+
+.todo-modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    transition: ease 0.5s;
+
+    display: none;
+}
+
+.group-modal-close {
+    display: flex;
+    justify-content: flex-end;
+    color: #ccc;
+    font-size: 1.3rem;
+    transition: ease 0.5s;
+    margin-left: 95%;
+}
+
+.todo-modal-close {
+    display: flex;
+    justify-content: flex-end;
+    color: #ccc;
+    font-size: 1.3rem;
+    transition: ease 0.5s;
+    margin-left: 95%;
+}
+
+.group-modal-close:hover {
+    cursor: pointer;
+    color: #212020
+}
+
+.todo-modal-close:hover {
+    cursor: pointer;
+    color: #212020
+}
+
+.group-modal-enter-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.todo-modal-enter-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.group-modal-error {
+    color: #ff0000;
+    font-size: 12px;
+    display: none;
+    transition: ease 0.5s;
+}
+
+.group-text {
+    color: beige;
+    font-size: 1.2rem;
+}
+
+.add-container:hover {
+    cursor: pointer;
+}
+
+.add-container:hover i{
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.todo-list-container {
+    margin-top: 0px;
+    height: 60%;
+    overflow-y: scroll;
+}
+
+.list-item-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-item {
+    border-radius: 10px;
+    margin-top: 5px;
+    border-radius: 20px;
+    background-color:white; /*palegreen*/
+}
+
+.remove-item {
+    align-self: center;
+    margin-left: 10%;
+    color: #ff0000;
+}
+
+.remove-item:hover {
+    cursor: pointer;
+}
+
+.todo-modal-form {
+    margin-top: 10px;
+    display: flex;
+    margin-bottom: -10px;
+}
+
+.todo-modal-input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.add-item-btn {
+    display:flex;
+    align-self: center;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 20px
+}
+
+.add-item-btn:hover {
+    cursor: pointer;
+}
+
+.delete-container {
+    width: 100%;
+}
+
+.delete-btn:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 420px){
+
+    .add-container {
+        background-color: #4ca1a3;
+        min-width: 150px;
+        min-height: 150px;
+        width: 150px;
+        height: 150px;
+        display: grid;
+        place-content: center;
+        margin: 2%;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                    0 2px 4px rgba(0,0,0,0.07), 
+                    0 4px 8px rgba(0,0,0,0.07), 
+                    0 8px 16px rgba(0,0,0,0.07),
+                    0 16px 32px rgba(0,0,0,0.07), 
+                    0 32px 64px rgba(0,0,0,0.07);            
+    }
+
+    .group-modal-content {
+        background-color: #f4f4f4;
+        margin: 20% auto;
+        padding: 20px;
+        width: 80%;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                    0 2px 4px rgba(0,0,0,0.07), 
+                    0 4px 8px rgba(0,0,0,0.07), 
+                    0 8px 16px rgba(0,0,0,0.07),
+                    0 16px 32px rgba(0,0,0,0.07), 
+                    0 32px 64px rgba(0,0,0,0.07);
+        border-radius: 10px;
+    }
+
+    .todo-modal-content {
+        background-color: #f4f4f4;
+        margin: 20% auto;
+        padding: 20px;
+        width: 90%;
+        height: 70%;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                    0 2px 4px rgba(0,0,0,0.07), 
+                    0 4px 8px rgba(0,0,0,0.07), 
+                    0 8px 16px rgba(0,0,0,0.07),
+                    0 16px 32px rgba(0,0,0,0.07), 
+                    0 32px 64px rgba(0,0,0,0.07);
+        border-radius: 10px;
+    }
+
+
+    .group-modal-form {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .group-modal-input {
+        border: none;
+        outline: none;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        width: 100%; 
+        margin-right: 5px;
+    }
+    
+    .group-modal-submit-btn {
+        color :beige;
+        background-color: #212020;
+        border-radius: 10px;
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    .group-modal-error-container {
+        width: 100%;
+    }
+
+    .group-modal-error {
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+
+    .delete-btn {
+        color: #ff0000;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+        text-decoration: underline;
+        margin-left: 90%;
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media screen and (min-width: 420px) and (max-width: 600px){
+
+    .add-container {
+        background-color: #4ca1a3;
+        min-width: 200px;
+        min-height: 200px;
+        width: 200px;
+        height: 200px;
+        display: grid;
+        place-content: center;
+        margin: 2%;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                    0 2px 4px rgba(0,0,0,0.07), 
+                    0 4px 8px rgba(0,0,0,0.07), 
+                    0 8px 16px rgba(0,0,0,0.07),
+                    0 16px 32px rgba(0,0,0,0.07), 
+                    0 32px 64px rgba(0,0,0,0.07);            
+    }
+
+    .group-modal-content {
+        background-color: #f4f4f4;
+        margin: 20% auto;
+        padding: 20px;
+        width: 80%;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                    0 2px 4px rgba(0,0,0,0.07), 
+                    0 4px 8px rgba(0,0,0,0.07), 
+                    0 8px 16px rgba(0,0,0,0.07),
+                    0 16px 32px rgba(0,0,0,0.07), 
+                    0 32px 64px rgba(0,0,0,0.07);
+        border-radius: 10px;
+    }
+
+    .todo-modal-content {
+        background-color: #f4f4f4;
+        margin: 20% auto;
+        padding: 40px;
+        width: 90%;
+        height: 70%;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                    0 2px 4px rgba(0,0,0,0.07), 
+                    0 4px 8px rgba(0,0,0,0.07), 
+                    0 8px 16px rgba(0,0,0,0.07),
+                    0 16px 32px rgba(0,0,0,0.07), 
+                    0 32px 64px rgba(0,0,0,0.07);
+        border-radius: 10px;
+    }
+
+
+    .group-modal-form {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .group-modal-input {
+        border: none;
+        outline: none;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        width: 100%; 
+        margin-right: 5px;
+    }
+    
+    .group-modal-submit-btn {
+        color :beige;
+        background-color: #212020;
+        border-radius: 10px;
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    .group-modal-error-container {
+        width: 100%;
+    }
+
+    .group-modal-error {
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+
+    .delete-btn {
+        color: #ff0000;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 25px;
+        text-decoration: underline;
+        margin-left: 90%;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 600px){
+
+    .add-container {
+        background-color: #4ca1a3;
+        min-width: 200px;
+        min-height: 200px;
+        width: 200px;
+        height: 200px;
+        display: grid;
+        place-content: center;
+        margin: 2%;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                    0 2px 4px rgba(0,0,0,0.07), 
+                    0 4px 8px rgba(0,0,0,0.07), 
+                    0 8px 16px rgba(0,0,0,0.07),
+                    0 16px 32px rgba(0,0,0,0.07), 
+                    0 32px 64px rgba(0,0,0,0.07);            
+    }
+
+    .group-modal-content {
+        background-color: #f4f4f4;
+        margin: 12% auto;
+        padding: 20px;
+        width: 80%;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                    0 2px 4px rgba(0,0,0,0.07), 
+                    0 4px 8px rgba(0,0,0,0.07), 
+                    0 8px 16px rgba(0,0,0,0.07),
+                    0 16px 32px rgba(0,0,0,0.07), 
+                    0 32px 64px rgba(0,0,0,0.07);
+        border-radius: 10px;
+    }
+
+    .todo-modal-content {
+        background-color: #f4f4f4;
+        margin: 9% auto;
+        padding: 20px;
+        width: 90%;
+        height: 70%;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                    0 2px 4px rgba(0,0,0,0.07), 
+                    0 4px 8px rgba(0,0,0,0.07), 
+                    0 8px 16px rgba(0,0,0,0.07),
+                    0 16px 32px rgba(0,0,0,0.07), 
+                    0 32px 64px rgba(0,0,0,0.07);
+        border-radius: 10px;
+    }
+       
+    .group-modal-form {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .group-modal-input {
+        border: none;
+        outline: none;
+        padding: 10px;
+        border-radius: 10px;
+        width: 80%; 
+        margin-right: 5px;
+    }
+    
+    .group-modal-submit-btn {
+        color :beige;
+        background-color: #212020;
+        border-radius: 10px;
+    }
+
+    .group-modal-error {
+        margin-left: 10px;
+        display: none;
+    }
+
+    .delete-btn {
+        color: #ff0000;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 25px;
+        text-decoration: underline;
+        margin-left: 90%;
+        font-size: 1.2rem;
+    }
+}
