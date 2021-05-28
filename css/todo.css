@@ -154,15 +154,6 @@
     font-size: 1.2rem;
 }
 
-.add-container:hover {
-    cursor: pointer;
-}
-
-.add-container:hover i{
-    transform: rotate(90deg);
-    cursor: pointer;
-}
-
 .todo-list-container {
     margin-top: 0px;
     height: 60%;
@@ -323,6 +314,10 @@
 
 @media screen and (min-width: 420px) and (max-width: 600px){
 
+    .add-container:hover {
+        cursor: pointer;
+    }
+
     .add-container {
         background-color: #4ca1a3;
         min-width: 200px;
@@ -416,6 +411,15 @@
 }
 
 @media screen and (min-width: 600px){
+
+    .add-container:hover {
+        cursor: pointer;
+    }
+    
+    .add-container:hover i{
+        transform: rotate(90deg);
+        cursor: pointer;
+    }
 
     .add-container {
         background-color: #4ca1a3;
