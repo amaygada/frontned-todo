@@ -1,5 +1,5 @@
 //urls
-let url = "http://amaygada.pythonanywhere.com/"
+let url = "https://amaygada.pythonanywhere.com/"
 
 let register_url = url + 'auth/register/'
 let login_url = url + 'auth/token/'
