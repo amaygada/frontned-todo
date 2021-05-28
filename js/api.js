@@ -40,7 +40,7 @@ export let signin = async (username, password) => {
     myHeaders.append("Content-Type", "application/json");
 
     var raw = JSON.stringify({"username":username ,"password":password});
-
+    console.log(login_url)
     var requestOptions = {
     method: 'POST',
     headers: myHeaders,
